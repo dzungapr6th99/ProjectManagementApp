@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectManagementApp.Views.TeacherForm">
+  <ContentView.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50">
+                </RowDefinition>
+                <RowDefinition Height="50">
+                </RowDefinition>
+                <RowDefinition>
+                </RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Label x:Name="TeacherName"
+                   FontSize="20"
+                   BackgroundColor="RosyBrown"
+                   FontAttributes="Bold"
+                   FontFamily="Times New Roman"
+                   HorizontalOptions="End"
+                   />
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Text=" Danh sách project"
+               Grid.Column="0"
+               VerticalOptions="Start"
+               HorizontalOptions="Center"
+               FontSize="20"
+               FontFamily="Arial"
+               />
+                <Label
+            Grid.Column="1"
+            Text="Danh sách sinh viên"
+            VerticalOptions="Start"
+            HorizontalOptions="Start"
+            FontFamily="Arial"
+            FontSize="20"
+            BackgroundColor="DarkBlue"
+            FontAttributes="Bold"
+            />
+            </Grid>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button
+            x:Name="btnAcceptStudent"
+            Grid.Column="1"
+            Height="50"
+            Width="200"
+            Text="Chấp nhận"
+            FontSize="20"
+            VerticalOptions="End"
+            />
+                <Button
+            x:Name="btnAddProject"
+            Grid.Column="0"
+            Height="50"
+            Width="200"
+            Text="Thêm Project"
+            FontFamily="Arial"
+            FontSize="20"
+            Background="Azure"
+            BorderColor="Aqua"
+            VerticalOptions="End"
+            HorizontalOptions="Center"
+            />
+                <Grid Grid.Column="0">
+                    <StackLayout x:Name="ListProject"></StackLayout>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <StackLayout x:Name="ListStudent"/>
+                </Grid>
+            </Grid>
+
+        </Grid>
+    </ContentView.Content>
+</ContentView>

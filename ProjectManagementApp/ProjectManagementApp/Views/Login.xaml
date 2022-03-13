@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectManagementApp.Views.Login">
+  <ContentView.Content>
+      <StackLayout>
+            <Label 
+            
+            Text="Username:"
+            FontSize="25"
+            FontFamily="Arial"
+            TextColor="Blue"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="Start" Margin="155,150,0,0"
+            />
+            <Label 
+      
+            Text="Password:"
+            FontSize="25"
+            FontFamily="Arial"
+            BackgroundColor="Blue"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="CenterAndExpand" Margin="155,0,0,150"
+            />
+            <Entry
+            x:Name="tbUsername"
+            
+            Background="Azure"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="CenterAndExpand"
+            />
+            <Entry
+            x:Name="pbPassword"
+            Background="Azure"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="CenterAndExpand"
+            IsPassword="True"
+            Margin="160,140"
+            Height="50"
+            Width="350"
+             />
+            <Label
+            Text="Bạn là: "
+            FontSize="20"
+            FontFamily="Arial"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" 
+            Margin="200,70"
+            />
+            <Label
+            Text="Sinh viên"
+            FontSize="18"
+            FontFamily="Arial"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" 
+            Margin="270,100"            
+            />
+
+            <RadioButton
+            x:Name="cbIsStudent"
+            Width="15"
+            Height="15"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Margin="350,105"
+            />
+            <Label
+            Text="Giảng Viên"
+            FontSize="18"
+            FontFamily="Arial"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" 
+            Margin="270,100"            
+            />
+
+            <RadioButton
+            x:Name="cbIsTeacher"
+            Width="15"
+            Height="15"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Margin="250,105"
+            />
+            <Button
+            x:Name="btnLogin"
+            Height="50"
+            Width="200"
+            VerticalOptions="End"
+            HorizontalOptions="End"
+            Text="Đăng nhập"
+            FontSize="25"
+            FontFamily="Arial"
+            
+            Background="Azure"
+            Margin="235,60"
+            Clicked="btnLogin_Click_1"
+            />
+            <Label
+            x:Name="tbStatus"
+            FontSize="18"
+            FontFamily="Arial"
+            HorizontalOptions="End"
+            VerticalOptions="End"
+            Margin="30"
+            />
+        </StackLayout>
+  </ContentView.Content>
+</ContentView>
